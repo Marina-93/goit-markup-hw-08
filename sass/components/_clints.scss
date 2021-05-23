@@ -1,0 +1,60 @@
+.clints {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -30px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.clints_list:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+
+.clints_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--network-cl);
+  box-sizing: border-box;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    border-color: var(--acttiv-cl);
+  }
+  @media screen and (max-width: 767.9px) {
+    width: 210px;
+    height: 92px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 90px;
+    margin-bottom: 0px;
+  }
+}
+
+.clint_svg {
+  fill: var(--network-cl);
+  transition: background-color var(--animation), fill var(--animation);
+  .clints_link:hover &,
+  .clints_link:focus & {
+    fill: var(--acttiv-cl);
+  }
+}

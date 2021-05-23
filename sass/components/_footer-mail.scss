@@ -1,0 +1,63 @@
+.sign {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    width: 570px;
+  }
+}
+
+.sign_form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.sign_mail {
+  padding-left: 16px;
+  margin-right: 12px;
+  margin-top: 20px;
+  height: 50px;
+  color: var(--blfon-text-cl);
+  background-color: var(--bg-hat);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color var(--animation);
+  &:focus {
+    border-color: var(--acttiv-cl);
+  }
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (max-width: 1199.9px) {
+    width: 450px;
+    margin-bottom: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.sign_button {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 50px;
+  @media screen and (max-width: 1199.9px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
+}
+
+.sign_svg {
+  fill: var(--blfon-text-cl);
+  margin-left: 10px;
+}

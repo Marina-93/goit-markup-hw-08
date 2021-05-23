@@ -1,0 +1,147 @@
+.border {
+  border-bottom: 1px solid var(--border-cl);
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.log {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.log_item {
+  @media screen and (max-width: 767.9px) {
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 90px;
+  }
+}
+
+.log_part {
+  color: var(--acttiv-cl);
+}
+
+.line-list {
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.line-list-menu {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav {
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+  }
+}
+
+.line-list_nav {
+  margin-right: 50px;
+}
+
+.line-list li:last-child {
+  margin-right: 0px;
+}
+
+.line-list_nav {
+  display: block;
+}
+
+.line_link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--acttiv-cl);
+  }
+}
+
+.line_link-tab {
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+}
+
+.line-list_current {
+  position: relative;
+  color: var(--acttiv-cl);
+}
+
+.line-list_current::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--acttiv-cl);
+  border-radius: 2px;
+  margin-top: 28px;
+}
+
+.gis {
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
+.line_link-place {
+  display: flex;
+  align-items: center;
+  color: var(--articl-text-cl);
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.line-list_svg {
+  fill: currentColor;
+  margin-right: 10px;
+}
