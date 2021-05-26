@@ -3,6 +3,7 @@
   visibility: hidden;
   pointer-events: none;
 }
+
 .backmodal {
   position: fixed;
   top: 0;
@@ -15,6 +16,7 @@
     margin: 93 15;
   }
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -29,6 +31,7 @@
     height: 609px;
   }
 }
+
 .modal_button {
   position: absolute;
   top: 8px;
@@ -44,6 +47,7 @@
     color: var(--acttiv-cl);
   }
 }
+
 .modal_title {
   font-weight: bold;
   font-size: 20px;

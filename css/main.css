@@ -130,7 +130,7 @@ textarea {
   line-height: 1.19;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.9px) {
   .log {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -304,6 +304,9 @@ textarea {
 
 .mobile-menu.is-open {
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -328,10 +331,6 @@ textarea {
   color: var(--acttiv-cl);
 }
 
-.mobile-gis {
-  padding-top: 306px;
-}
-
 .mobile-gis_tel {
   color: var(--acttiv-cl);
   font-weight: 500;
@@ -354,6 +353,7 @@ textarea {
 
 .mobile-network {
   display: flex;
+  justify-content: space-between;
 }
 
 .mobile-network_list:not(:last-child) {
@@ -398,6 +398,7 @@ textarea {
 
 .mobile-menu_close {
   display: none;
+  position: fixed;
 }
 
 .is-open .mobile-menu_close {
@@ -421,12 +422,16 @@ textarea {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hat {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tab/comand/hiro-tab2x.jpg);
+    padding-bottom: 118px;
+    padding-top: 118px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767.9px), screen and (min-resolution: 192dpi) and (max-width: 767.9px), screen and (min-resolution: 2dppx) and (max-width: 767.9px) {
   .hat {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mob/comand/hiro-mob2x.jpg);
+    padding-bottom: 118px;
+    padding-top: 118px;
   }
 }
 
@@ -606,7 +611,7 @@ textarea {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199.9px) {
+@media screen and (max-width: 1199.9px) {
   .our-squad_list {
     margin-right: auto;
     margin-left: auto;
@@ -679,7 +684,7 @@ textarea {
   fill: var(--buton);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.9px) {
   .clints {
     display: flex;
     flex-wrap: wrap;
@@ -700,6 +705,13 @@ textarea {
 @media screen and (min-width: 1200px) {
   .clints {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .clints_list {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+    margin-bottom: 30px;
   }
 }
 
@@ -724,9 +736,8 @@ textarea {
 
 @media screen and (max-width: 767.9px) {
   .clints_link {
-    width: 210px;
+    min-width: 100%;
     height: 92px;
-    margin-bottom: 30px;
   }
 }
 
@@ -791,6 +802,16 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-hiro {
+    margin-right: 70px;
+  }
+}
+
+.footer-log {
+  padding-top: 0px;
+}
+
 .footer_gis {
   margin-top: 20px;
   font-style: inherit;
@@ -839,8 +860,11 @@ textarea {
   }
 }
 
-.footer_networks_list {
+.networks_icon {
   margin-top: 20px;
+}
+
+.footer_networks_list {
   margin-left: 0;
 }
 
@@ -849,7 +873,7 @@ textarea {
 }
 
 .foot_network_svg {
-  fill: #ffffff;
+  fill: var(--list-cl);
 }
 
 @media screen and (min-width: 1200px) {
@@ -888,13 +912,18 @@ textarea {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 1199.9px) {
+@media screen and (max-width: 767.9px) {
   .sign_mail {
-    width: 450px;
-    margin-bottom: 20px;
+    width: 100%;
     display: block;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sign_mail {
+    width: 450px;
   }
 }
 
@@ -916,6 +945,7 @@ textarea {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
   }
 }
 
@@ -1111,7 +1141,7 @@ textarea {
   display: flex;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.9px) {
   .search {
     flex-wrap: wrap;
   }
@@ -1128,7 +1158,7 @@ textarea {
   margin-left: 8px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .search_list:not(:first-child) {
     margin-bottom: 15px;
   }
@@ -1235,6 +1265,12 @@ textarea {
 
 .content_card {
   padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .content_card--teh {
+    padding-bottom: 56px;
+  }
 }
 
 .content_title {

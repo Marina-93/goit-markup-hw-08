@@ -1,97 +1,110 @@
-.form{
-    width: 100%;
+.form {
+  width: 100%;
 }
-.border-form{
-    outline: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: solid var(--animation);
-        &:focus{
-        border-color: var(--acttiv-cl);
-    }
+
+.border-form {
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: solid var(--animation);
+  &:focus {
+    border-color: var(--acttiv-cl);
+  }
 }
-.form_flex{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    position: relative;
+
+.form_flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  position: relative;
 }
-.modal_label{
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--articl-text-cl);
-    transition: border-color var(--animation);
+
+.modal_label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--articl-text-cl);
+  transition: border-color var(--animation);
 }
-.modal_input{
-    padding-left: 42px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 11px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    cursor: pointer;
+
+.modal_input {
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 11px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  cursor: pointer;
 }
-.modal_svg{
-    position: absolute;
-    top: 55%;
-    left: 15px;
-    .border-form:focus ~ &{
-        fill: var(--acttiv-cl);
-    }
+
+.modal_svg {
+  position: absolute;
+  top: 55%;
+  left: 15px;
+  .border-form:focus ~ & {
+    fill: var(--acttiv-cl);
+  }
 }
-.modal_coment{
-    height: 120px;
-    padding: 16px 12px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    cursor: pointer;
+
+.modal_coment {
+  height: 120px;
+  padding: 16px 12px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  cursor: pointer;
 }
-.modal_coment::placeholder{
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+
+.modal_coment::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
-.form_checkbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+
+.form_checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
-.form_checkbox-title{
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--articl-text-cl);
-    margin-left: 8px;
+
+.form_checkbox-title {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--articl-text-cl);
+  margin-left: 8px;
 }
-.form_checkbox-link{
-    color: var(--acttiv-cl);
+
+.form_checkbox-link {
+  color: var(--acttiv-cl);
 }
-.form_checkbox-title::before{
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 16px;
-    border: 2px solid var(--text-cl);
-    border-radius: 2px;
-    margin-right: 8.38px;
-    cursor: pointer;
+
+.form_checkbox-title::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--text-cl);
+  border-radius: 2px;
+  margin-right: 8.38px;
+  cursor: pointer;
 }
-.checkbox:checked +.form_checkbox-title::before{
-   background-image: url(../images/Chack.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: contain;
-   background-color: var(--acttiv-cl);
-   border-color: var(--acttiv-cl);
+
+.checkbox:checked + .form_checkbox-title::before {
+  background-image: url(../images/Chack.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: var(--acttiv-cl);
+  border-color: var(--acttiv-cl);
 }
-.button_modal{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+
+.button_modal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }

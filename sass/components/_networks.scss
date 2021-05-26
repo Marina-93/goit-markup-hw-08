@@ -2,9 +2,11 @@
     display: flex;
     justify-content: center; 
 }
+
 .network_list:not(:last-child){
     margin-right: 10px;
 }
+
 .network_log{
     display: flex;
     align-items: center;
@@ -19,6 +21,7 @@
             background-color: var(--acttiv-cl);
     }
 }
+
 .network_svg{
     width: 20px;
     height: 20px;
