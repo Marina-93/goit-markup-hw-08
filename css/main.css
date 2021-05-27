@@ -989,7 +989,7 @@ textarea {
 @media screen and (max-width: 767.9px) {
   .backmodal {
     z-index: 20;
-    padding: auto 15px;
+    overflow-y: scroll;
   }
 }
 
@@ -1007,7 +1007,7 @@ textarea {
 @media screen and (max-width: 479.9px) {
   .modal {
     width: 90%;
-    height: 609px;
+    height: 95%px;
   }
 }
 
