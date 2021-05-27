@@ -54,7 +54,7 @@
             <div class="mobile-menu" data-menu>
                 <ul class="list mobile-nav">
                     <li class="mobile-nav_list"><a href="./index.html" class="link mobile-nav_link">Студия</a></li>
-                    <li class="mobile-nav_list"><a href="./portfolio.html" class="link mobile-nav_link">Портфолио</a></li>
+                    <li class="mobile-nav_list"><a href="./portfolio.html" class="link mobile-nav_link mobile-nav_current">Портфолио</a></li>
                     <li class="mobile-nav_list"><a href="" class="link mobile-nav_link">Контакты</a></li>
                 </ul>
                 <div>
@@ -212,66 +212,68 @@
         </section>
     </main>
     <!--Подвал-->
-    <footer class="footer">
-        <div class="container footer-flex">
-            <div class="footer-hiro">
+<footer class="footer">
+    <div class="container footer-flex">
+        <div class="footer-hiro">
             <a href="" class="log link footer-log"><span class="log_part">Web</span>Studio</a>
             <address class="footer_gis">
                 <ul class="list">
                     <li class="footer_map"> г. Киев, пр-т Леси Украинки, 26 </li>
-                    <li class="footer_map_list"><a href="mailto:info@example.com" class="link footer_link">@example.com</a></li>
-                    <li class="footer_map_list"><a href="tel:+380991111111" class="link footer_link">+38 099 111 11 11</a></li>
+                    <li class="footer_map_list"><a href="mailto:info@example.com"
+                            class="link footer_link">info@example.com</a></li>
+                    <li class="footer_map_list"><a href="tel:+380991111111" class="link footer_link">+38 099 111 11
+                            11</a></li>
                 </ul>
             </address>
-            </div>
-            <div class="foot-network">
-                <p class="foot-network_title">ПРИСОЕДИНЯЙТЕСЬ</p>
-                <ul class=" list networks">
-                    <li class="network_list footer_networks_list" >
-                        <a class="network_log footer_networks_link" href="">
-                            <svg class="network_svg foot_network_svg">
-                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="network_list footer_networks_list">
-                        <a class="network_log footer_networks_link" href="">
-                            <svg class="network_svg foot_network_svg">
-                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="network_list footer_networks_list">
-                        <a class="network_log footer_networks_link" href="">
-                            <svg class="network_svg foot_network_svg">
-                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="network_list footer_networks_list">
-                        <a class="network_log footer_networks_link" href="">
-                            <svg class="network_svg foot_network_svg">
-                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="sign">
-                <p class="foot-network_title">Подпишитесь на рассылку</p>
-                <form class="sign_form">
-                    <label for="sign"></label>
-                        <input class="sign_mail" type="email" name="email" id="sign" pattern="[A-Za-z] " placeholder="E-mail">
-                        <button type="submit" class="button sign_button">
-                        Подписаться
-                        <svg class="sign_svg" width="24px" height="24px" >
-                           <use href="./images/symbol-defs.svg#icon-telegram"></use>
-                        </svg> 
-                        </button>                    
-                </form>
-            </div>
         </div>
-    </footer>
+        <div class="foot-network">
+            <p class="foot-network_title">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class=" list networks networks_icon">
+                <li class="network_list footer_networks_list">
+                    <a class="network_log footer_networks_link" href="">
+                        <svg class="network_svg foot_network_svg">
+                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="network_list footer_networks_list">
+                    <a class="network_log footer_networks_link" href="">
+                        <svg class="network_svg foot_network_svg">
+                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="network_list footer_networks_list">
+                    <a class="network_log footer_networks_link" href="">
+                        <svg class="network_svg foot_network_svg">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="network_list footer_networks_list">
+                    <a class="network_log footer_networks_link" href="">
+                        <svg class="network_svg foot_network_svg">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sign">
+            <p class="foot-network_title">Подпишитесь на рассылку</p>
+            <form class="sign_form">
+                <label for="sign"></label>
+                <input class="sign_mail" type="email" name="email" id="sign" pattern="[A-Za-z] " placeholder="E-mail">
+                <button type="submit" class="button sign_button">
+                    Подписаться
+                    <svg class="sign_svg" width="24px" height="24px">
+                        <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</footer>
     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

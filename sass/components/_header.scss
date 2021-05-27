@@ -77,7 +77,7 @@
   }
 }
 
-.line-list_nav {
+.line-list_nav:not(:last-child) {
   margin-right: 50px;
 }
 

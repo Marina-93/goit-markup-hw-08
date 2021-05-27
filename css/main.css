@@ -219,7 +219,7 @@ textarea {
   }
 }
 
-.line-list_nav {
+.line-list_nav:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -297,7 +297,7 @@ textarea {
   left: 100%;
   width: 100%;
   height: 100vh;
-  z-index: 99;
+  z-index: 9;
   padding: 48px 40px 40px;
   background-color: var(--list-cl);
 }
@@ -317,6 +317,10 @@ textarea {
 
 .mobile-nav_list:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-nav_current {
+  color: var(--acttiv-cl);
 }
 
 .mobile-nav_link {
@@ -374,7 +378,7 @@ textarea {
 }
 
 .mobile-menu_btn {
-  z-index: 100;
+  z-index: 10;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -419,6 +423,12 @@ textarea {
   background-position: center;
 }
 
+@media screen and (max-width: 1199.9px) {
+  .hat {
+    height: 400px;
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hat {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tab/comand/hiro-tab2x.jpg);
@@ -443,7 +453,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199.9) {
+@media screen and (max-width: 1199.9px) {
   .title_hat {
     font-size: 26px;
     line-height: 1.62;
@@ -978,7 +988,8 @@ textarea {
 
 @media screen and (max-width: 767.9px) {
   .backmodal {
-    margin: 93 15;
+    z-index: 20;
+    padding: auto 15px;
   }
 }
 
@@ -993,7 +1004,14 @@ textarea {
   padding: 40px;
 }
 
-@media screen and (max-width: 767.9px) {
+@media screen and (max-width: 479.9px) {
+  .modal {
+    width: 90%;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199.9px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1235,6 +1253,12 @@ textarea {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .content_link {
+    height: 100%;
+  }
+}
+
 .content_img {
   position: relative;
   overflow: hidden;
@@ -1265,12 +1289,6 @@ textarea {
 
 .content_card {
   padding: 20px 24px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.9px) {
-  .content_card--teh {
-    padding-bottom: 56px;
-  }
 }
 
 .content_title {
