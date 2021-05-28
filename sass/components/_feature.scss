@@ -5,9 +5,7 @@
 }
 
 .job_li {
-  @media screen and (min-width: 480px) {
-    margin-right: auto;
-    margin-left: auto;
+  @media screen and (max-width: 1199.9px) {
     margin-top: 30px;
   }
 

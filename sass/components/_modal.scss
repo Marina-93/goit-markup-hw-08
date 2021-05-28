@@ -23,8 +23,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: var(--blfon-text-cl);
   padding: 40px;
   @media screen and (max-width: 479.9px) {
@@ -33,7 +31,10 @@
   }
   @media screen and (min-width: 480px) and (max-width: 1199.9px) {
     width: 450px;
-    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -59,4 +60,7 @@
   line-height: 1.15;
   text-align: center;
   color: var(--text-cl);
+  @media screen and (max-width: 1199.9px) {
+    line-height: 1.5;
+  }
 }
