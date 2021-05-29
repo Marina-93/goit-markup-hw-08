@@ -49,8 +49,6 @@
   }
   @media screen and (min-width: 768px) {
     display: inline-block;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -122,9 +120,18 @@
   margin-top: 28px;
 }
 
-.line_link-tab {
-  padding-top: 0;
-  padding-bottom: 0;
+.line-list_gis:first-child .line_link-tab {
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    padding-top: 21px;
+    padding-bottom: 0;
+  }
+}
+
+.line-list_gis:last-child .line_link-tab {
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    padding-top: 0;
+    padding-bottom: 21px;
+  }
 }
 
 .gis {

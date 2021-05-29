@@ -182,8 +182,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .line-list {
     display: inline-block;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 
@@ -264,9 +262,18 @@ textarea {
   margin-top: 28px;
 }
 
-.line_link-tab {
-  padding-top: 0;
-  padding-bottom: 0;
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .line-list_gis:first-child .line_link-tab {
+    padding-top: 21px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .line-list_gis:last-child .line_link-tab {
+    padding-top: 0;
+    padding-bottom: 21px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
@@ -302,6 +309,7 @@ textarea {
   position: fixed;
   top: 0;
   left: 100%;
+  max-width: 767px;
   width: 100%;
   height: 100vh;
   z-index: 9;
@@ -317,7 +325,7 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .mobile-menu {
+  .mobile-menu.is-open {
     display: none;
   }
 }
@@ -342,6 +350,12 @@ textarea {
   color: var(--acttiv-cl);
 }
 
+@media screen and (max-width: 479.9px) {
+  .mobile-nav_link {
+    font-size: 34px;
+  }
+}
+
 .mobile-gis_tel {
   color: var(--acttiv-cl);
   font-weight: 500;
@@ -350,6 +364,12 @@ textarea {
   letter-spacing: 0.02em;
   display: block;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 479.9px) {
+  .mobile-gis_tel {
+    font-size: 27px;
+  }
 }
 
 .mobile-gis_mail {
@@ -362,6 +382,12 @@ textarea {
   margin-bottom: 64px;
 }
 
+@media screen and (max-width: 479.9px) {
+  .mobile-gis_mail {
+    font-size: 18px;
+  }
+}
+
 .mobile-network {
   font-weight: 500;
   font-size: 18px;
@@ -370,13 +396,31 @@ textarea {
   display: flex;
 }
 
+@media screen and (max-width: 479.9px) {
+  .mobile-network {
+    font-size: 12px;
+  }
+}
+
 .mobile-network_list:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 479.9px) {
+  .mobile-network_list:not(:last-child) {
+    padding-right: 4px;
+  }
+}
+
 .mobile-network_list:not(:first-child) {
   padding-left: 10px;
+}
+
+@media screen and (max-width: 479.9px) {
+  .mobile-network_list:not(:first-child) {
+    padding-left: 4px;
+  }
 }
 
 .mobile-network_link {
@@ -385,6 +429,12 @@ textarea {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 479.9px) {
+  .mobile-network_link {
+    font-size: 14px;
+  }
 }
 
 .mobile-menu_btn {
@@ -588,6 +638,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: -30px;
   }
 }
 
@@ -633,15 +684,13 @@ textarea {
 
 @media screen and (max-width: 1199.9px) {
   .our-squad_list {
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .our-squad_list {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 2 * 15px) / 2);
   }
 }
 
